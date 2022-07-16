@@ -75,6 +75,11 @@
   <section class="live-chat">
     <Client-Qutes />
   </section>
+
+  <!-- Client quotes -->
+  <section class="live-chat">
+    <Gen-Footer />
+  </section>
 </template>
 
 <script>
@@ -86,6 +91,7 @@ import LiveChat from "@/components/secondary/LiveChat.vue";
 import StartSelling from "@/components/secondary/StartSelling.vue";
 import GetDirectOrder from "@/components/secondary/GetDirectOrder.vue"
 import ClientQutes from "@/components/secondary/ClientQuote.vue"
+import GenFooter from "@/components/secondary/GenFooter.vue"
 export default {
   name: "LandingPage",
   components: {
@@ -96,7 +102,8 @@ export default {
     LiveChat,
     StartSelling,
     GetDirectOrder,
-    ClientQutes
+    ClientQutes,
+    GenFooter
   },
 
   data() {

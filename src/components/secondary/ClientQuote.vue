@@ -1,7 +1,7 @@
 <template>
     <div class="backgroundImage">
         <div>
-            <div class="quote-h3">Our blessed client said about us 😍</div>
+            <div class="quote-h3" style="color: #fff">Our blessed client said about us 😍</div>
             <div class="row">
                 <div class="col-sm-6">
                     <Quote-Card class="card-space" />
