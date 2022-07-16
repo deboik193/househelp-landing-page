@@ -20,8 +20,9 @@
         <i class="fas fa-bars" ref="toggleElement4"></i>
       </div>
 
-
+      <Side-Bar @closeAllBar="ToggleBar()" ref="toggleElement3" />
     </div>
+
 
 
 
@@ -29,11 +30,13 @@
 </template>
 
 <script>
-
+import CustomButton from "@/components/primary/Button.vue";
+import SideBar from "@/layout/Layout.vue"
 export default {
   name: "LandingPage",
   components: {
-
+    CustomButton,
+    SideBar
   },
 
   data() {
@@ -156,7 +159,58 @@ export default {
     .reading-text{
       padding: 0 0 0 5em;
     }
-  } 
+  }
+
+  .features {
+    .features-header{
+        font-family: 'U8';
+        font-style: normal;
+        font-weight: 700 !important;
+        font-size: 36px;
+        line-height: 56px;
+        text-align: center;
+        color: #1B1C20;
+      }
+
+    .feature-card {
+      width: 416px;
+      height: 153px;
+      left: 0px;
+      top: 0px;
+      background: #FFFFFF;
+      border-radius: 5px;
+      
+      .feature-img-margin {
+        margin: 0 23px 0 0;
+        
+        .fas.fa-video {
+          color: #F23936;
+          position: absolute;
+          font-size: 20px;
+        }
+      }
+
+      .feature-h3 {
+        font-family: 'U8';
+        font-style: normal;
+        font-weight: 700 !important;
+        font-size: 21px;
+        line-height: 33px;
+        color: #1B1C20;
+      }
+
+      .feature-p {
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 16px;
+        line-height: 24px;
+        color: #383A47;
+        width: 277px;
+        height: 48px;
+        margin: 12px 0 32px 0;
+      }
+    } 
+  }  
 }
 
 @media (max-width: 1129px) {
