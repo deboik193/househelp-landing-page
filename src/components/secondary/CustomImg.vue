@@ -44,6 +44,7 @@ export default {
 img {
     width: 60.52px !important;
     position: absolute !important;
+    cursor: pointer;
 
 }
 .abs-mg-1  {
@@ -57,6 +58,9 @@ img {
 }
 .abs-mg-3 {
     left: 15%;
+}
+img:hover {
+    z-index: 3;
 }
 
 .custome-rate {

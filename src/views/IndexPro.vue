@@ -40,34 +40,39 @@
     </div>
 
     <!-- features -->
-    <div class="features">
+    <section class="features">
       <div class="features-header">Features for a better experience</div>
-
-      <div class="feature-card nav">
-        <div class="feature-img-margin">
-          <img src="@/assets/danger.png" alt="">
-          <i class="fas fa-video"></i>
+      <div class="nav justify-content-between">
+        <div class="row">
+          <div class="col-sm-4">
+            <Feature-Item image="danger" title="Video messaging" />
+          </div>
+          <div class="col-sm-4">
+            <Feature-Item image="success" title="Save your time" />
+          </div>
+          <div class="col-sm-4">
+            <Feature-Item image="orange" title="Keep safe & private" />
+          </div>
         </div>
-        <div>
-          <div class="feature-h3">Video messaging</div>
-          <div class="feature-p">This software is very easy for you to manage. You can use it as you wish.</div>
-        </div>
-
       </div>
-    </div>
+    </section>
   </div>
+
+
 </template>
 
 <script>
 import CustomButton from "@/components/primary/Button.vue";
-import CustomImg from "@/components/primary/CustomImg.vue"
-import SideBar from "@/layout/Layout.vue"
+import CustomImg from "@/components/secondary/CustomImg.vue";
+import SideBar from "@/layout/Layout.vue";
+import FeatureItem from "@/components/secondary/FeaturesItem.vue";
 export default {
   name: "LandingPage",
   components: {
     CustomButton,
     SideBar,
-    CustomImg
+    CustomImg,
+    FeatureItem
   },
 
   data() {
@@ -101,11 +106,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
-
-
-
 @font-face {
   font-family: 'U8';
   src: url('@/assets/U8-Regular.ttf') format('truetype');
@@ -163,7 +163,11 @@ export default {
   }
 
   .grid-container {
-    margin: 38px -15px 80px -15px;
+    margin: 38px -15px 0px -15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 
     .ads-h4 {
       width: 509px;
@@ -196,54 +200,17 @@ export default {
   }
 
   .features {
-    .features-header{
-        font-family: 'U8';
-        font-style: normal;
-        font-weight: 700 !important;
-        font-size: 36px;
-        line-height: 56px;
-        text-align: center;
-        color: #1B1C20;
-      }
-
-    .feature-card {
-      width: 416px;
-      height: 153px;
-      left: 0px;
-      top: 0px;
-      background: #FFFFFF;
-      border-radius: 5px;
-      
-      .feature-img-margin {
-        margin: 0 23px 0 0;
-        
-        .fas.fa-video {
-          color: #F23936;
-          position: absolute;
-          font-size: 20px;
-        }
-      }
-
-      .feature-h3 {
-        font-family: 'U8';
-        font-style: normal;
-        font-weight: 700 !important;
-        font-size: 21px;
-        line-height: 33px;
-        color: #1B1C20;
-      }
-
-      .feature-p {
-        font-style: normal;
-        font-weight: 400 !important;
-        font-size: 16px;
-        line-height: 24px;
-        color: #383A47;
-        width: 277px;
-        height: 48px;
-        margin: 12px 0 32px 0;
-      }
-    } 
+    margin: 80px 0 65px 0;
+    .features-header {
+      font-family: 'U8';
+      font-style: normal;
+      font-weight: 700 !important;
+      font-size: 36px;
+      line-height: 56px;
+      text-align: center;
+      color: #1B1C20;
+      margin-bottom: 46px;
+    }
   }  
 }
 
