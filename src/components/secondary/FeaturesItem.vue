@@ -22,17 +22,13 @@ props: ['image', 'title']
 </script>
 
 <style lang="scss" scoped>
+
 .feature-card {
-    width: 416px;
+    // width: 416px;
+    margin-right: 10px;
     height: 153px;
-    left: 0px;
-    top: 0px;
     background: #FFFFFF;
     border-radius: 5px;
-
-    .feature-img-margin {
-        margin: 0 23px 0 0;
-    }
 
     .feature-h3 {
         font-family: 'U8';
@@ -49,9 +45,33 @@ props: ['image', 'title']
         font-size: 16px;
         line-height: 24px;
         color: #383A47;
-        width: 277px;
         height: 48px;
-        margin: 12px 0 0px 0;
+        margin: 12px 5px 0px 0;
     }
+}
+
+@media (max-width: 851px) {
+
+    .feature-h3 {
+        font-weight: 500 !important;
+        font-size: 22px !important;
+        margin-left: 15px;
+    }
+
+    .feature-p {
+        margin-left: 15px !important;
+    }
+    
+}
+
+@media (max-width: 627px) {
+.feature-card {
+    text-align: center;
+    margin-bottom: 25px;
+    width: 416px;
+    margin-right: 0;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
 }
 </style>

@@ -3,17 +3,16 @@
     <div class="contentner">
       <div class="row live-height ">
         <div class="col-sm-6 live-chat-content">
-          <img src="@/assets/livechat1.png" alt="">
+          <img src="@/assets/getOrder.png" alt="">
         </div>
         <div class="col-sm-6 live-chat-content">
           <div class=" padding-left">
-            <div class="live-header">Meet your customers, with live video chat</div>
-            <div class="live-p">Proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.
+            <div class="live-header">Get direct orders from your customers</div>
+            <div class="live-p">Create custom landing pages with Rareblocks that converts more visitors than any
+              website. With lots of unique blocks easily build a page. There are many variations of passages of
+              available.
             </div>
-            <div class="live-p-2">Get paychecks up to two days early. Get a $20 bonus when you receive qualifying direct
-              deposits</div>
           </div>
-
         </div>
       </div>
     </div>
@@ -32,7 +31,7 @@ export default {
     margin-bottom: 50px;
 
     .live-height {
-      height: 585px;
+      height: 645px;
     }
 
     img {
@@ -46,22 +45,12 @@ export default {
       font-size: 48px;
       line-height: 56px;
       color: #1B1C20;
-      width: 511px;
+      width: 499px;
     }
 
     .live-p {
       margin-top: 43px;
-      width: 440px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 30px;
-      color: #383A47;
-    }
-
-    .live-p-2 {
-      margin-top: 26px;
-      width: 431px;
+      width: 498px;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;

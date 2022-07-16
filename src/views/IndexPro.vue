@@ -42,16 +42,16 @@
     <!-- features -->
     <section class="features">
       <div class="features-header">Features for a better experience</div>
-        <div class="row">
-          <div class="col-sm-4">
-            <Feature-Item image="danger" title="Video messaging" />
-          </div>
-          <div class="col-sm-4">
-            <Feature-Item image="success" title="Save your time" />
-          </div>
-          <div class="col-sm-4">
-            <Feature-Item image="orange" title="Keep safe & private" />
-          </div>
+      <div class="row">
+        <div class="col-sm-4 smaller-screen-center">
+          <Feature-Item image="danger" title="Video messaging"/>
+        </div>
+        <div class="col-sm-4 smaller-screen-center">
+          <Feature-Item image="success" title="Save your time"/>
+        </div>
+        <div class="col-sm-4 smaller-screen-center">
+          <Feature-Item image="orange" title="Keep safe & private"/>
+        </div>
       </div>
     </section>
   </div>
@@ -59,6 +59,16 @@
   <!-- live chat -->
   <section class="live-chat">
     <Live-Chat />
+  </section>
+
+  <!-- start selling -->
+  <section class="live-chat">
+    <Start-Selling />
+  </section>
+
+  <!-- start selling -->
+  <section class="live-chat">
+    <Get-Direct-Order />
   </section>
 </template>
 
@@ -68,6 +78,8 @@ import CustomImg from "@/components/secondary/CustomImg.vue";
 import SideBar from "@/layout/Layout.vue";
 import FeatureItem from "@/components/secondary/FeaturesItem.vue";
 import LiveChat from "@/components/secondary/LiveChat.vue";
+import StartSelling from "@/components/secondary/StartSelling.vue";
+import GetDirectOrder from "@/components/secondary/GetDirectOrder.vue"
 export default {
   name: "LandingPage",
   components: {
@@ -75,7 +87,9 @@ export default {
     SideBar,
     CustomImg,
     FeatureItem,
-    LiveChat
+    LiveChat,
+    StartSelling,
+    GetDirectOrder
   },
 
   data() {
@@ -128,7 +142,6 @@ export default {
 }
 
 .contentner {
-
   .nav-list {
     font-style: normal;
     font-weight: 500 !important;
@@ -311,6 +324,20 @@ export default {
     img {
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 851px) {
+  .features-header {
+      font-size: 32px;
+      line-height: 40px;
+  }
+}
+
+@media (max-width: 627px) {
+  .smaller-screen-center {
+    display: flex;
+    justify-content: center !important;
   }
 }
 </style>
