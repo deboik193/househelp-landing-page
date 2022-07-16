@@ -42,7 +42,6 @@
     <!-- features -->
     <section class="features">
       <div class="features-header">Features for a better experience</div>
-      <div class="nav justify-content-between">
         <div class="row">
           <div class="col-sm-4">
             <Feature-Item image="danger" title="Video messaging" />
@@ -53,12 +52,14 @@
           <div class="col-sm-4">
             <Feature-Item image="orange" title="Keep safe & private" />
           </div>
-        </div>
       </div>
     </section>
   </div>
 
-
+  <!-- live chat -->
+  <section class="live-chat">
+    <Live-Chat />
+  </section>
 </template>
 
 <script>
@@ -66,13 +67,15 @@ import CustomButton from "@/components/primary/Button.vue";
 import CustomImg from "@/components/secondary/CustomImg.vue";
 import SideBar from "@/layout/Layout.vue";
 import FeatureItem from "@/components/secondary/FeaturesItem.vue";
+import LiveChat from "@/components/secondary/LiveChat.vue";
 export default {
   name: "LandingPage",
   components: {
     CustomButton,
     SideBar,
     CustomImg,
-    FeatureItem
+    FeatureItem,
+    LiveChat
   },
 
   data() {

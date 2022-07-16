@@ -1,11 +1,15 @@
 <template>
-    <div class="feature-card nav">
-        <div class="feature-img-margin">
-            <img :src="require(`@/assets/${image}.png`)" alt="">
-        </div>
-        <div>
-            <div class="feature-h3">{{title}}</div>
-            <div class="feature-p">This software is very easy for you to manage. You can use it as you wish.</div>
+    <div class="feature-card">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="feature-img-margin">
+                    <img :src="require(`@/assets/${image}.png`)" alt="">
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="feature-h3">{{title}}</div>
+                <div class="feature-p">This software is very easy for you to manage. You can use it as you wish.</div>
+            </div>
         </div>
     </div>
 </template>
