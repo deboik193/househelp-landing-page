@@ -12,6 +12,16 @@
               website. With lots of unique blocks easily build a page. There are many variations of passages of
               available.
             </div>
+            <div class="kplus-space d-flex">
+              <div class=" d-flex k-space">
+                <div class="kplus">4.3K+</div>
+                <div class="ksmall">Website’s Powering</div>
+              </div>
+              <div class=" d-flex">
+                <div class="kplus">7M+</div>
+                <div class="ksmall">Chats in Last 2022</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -26,9 +36,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.d-flex {
+  display: flex;
+}
+
 .live-chat {
     background: #F8F8FA;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     .live-height {
       height: 645px;
@@ -57,6 +72,33 @@ export default {
       line-height: 26px;
       color: #383A47;
     }
+.kplus-space {
+  margin-top: 67px;
+
+  .k-space {
+    margin-right: 35px;
+  }
+  .kplus {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 56px;
+      color: #1B1C20;
+      margin-right: 22px;
+    }
+
+    .ksmall {
+      width: 77px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #383A47;
+    }
+}
+    
   .live-chat-content {
     align-self: center !important;
   }

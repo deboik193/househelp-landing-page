@@ -29,7 +29,6 @@ export default {
 <style lang="scss" scoped>
 .live-chat {
     background: #F8F8FA;
-    margin-bottom: 50px;
 
     .live-height {
       height: 585px;

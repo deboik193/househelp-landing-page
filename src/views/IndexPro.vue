@@ -66,9 +66,14 @@
     <Start-Selling />
   </section>
 
-  <!-- start selling -->
+  <!-- Get Direct Order -->
   <section class="live-chat">
     <Get-Direct-Order />
+  </section>
+
+  <!-- Client quotes -->
+  <section class="live-chat">
+    <Client-Qutes />
   </section>
 </template>
 
@@ -80,6 +85,7 @@ import FeatureItem from "@/components/secondary/FeaturesItem.vue";
 import LiveChat from "@/components/secondary/LiveChat.vue";
 import StartSelling from "@/components/secondary/StartSelling.vue";
 import GetDirectOrder from "@/components/secondary/GetDirectOrder.vue"
+import ClientQutes from "@/components/secondary/ClientQuote.vue"
 export default {
   name: "LandingPage",
   components: {
@@ -89,7 +95,8 @@ export default {
     FeatureItem,
     LiveChat,
     StartSelling,
-    GetDirectOrder
+    GetDirectOrder,
+    ClientQutes
   },
 
   data() {

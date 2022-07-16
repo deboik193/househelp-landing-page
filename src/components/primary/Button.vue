@@ -14,8 +14,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
 .fas {
     margin: 0 9px;
 }
