@@ -39,7 +39,22 @@
       </div>
     </div>
 
+    <!-- features -->
+    <div class="features">
+      <div class="features-header">Features for a better experience</div>
 
+      <div class="feature-card nav">
+        <div class="feature-img-margin">
+          <img src="@/assets/danger.png" alt="">
+          <i class="fas fa-video"></i>
+        </div>
+        <div>
+          <div class="feature-h3">Video messaging</div>
+          <div class="feature-p">This software is very easy for you to manage. You can use it as you wish.</div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -86,6 +101,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
 
 
 @font-face {
@@ -266,7 +284,6 @@ export default {
   .ads-p {
     width: 318px !important;
     height: 96px !important;
-    margin: 29px 0;
   }
 
   ul, .smaller-screen {
@@ -309,19 +326,21 @@ export default {
 }
 
 @media (max-width: 627px) {
-
-  .ads-h4 {
-    margin: 50px 0 !important;
+  .grid-container {
+      margin: 8px 0 !important;
   }
-}
-
-@media (max-width: 575px) {
+  .ads-h4 {
+    margin: 54.94px 0 15px 0 !important;
+  }
+  .ads-p {
+    margin: 0 0 25px 0 !important;
+  }
   .reading-text {
-        padding: 0 0 0 0em !important;
+    padding: 0 0 0 0em !important;
+
     img {
       width: 100%;
     }
   }
 }
-
 </style>

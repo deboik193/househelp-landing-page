@@ -40,6 +40,7 @@ export default {
 
 
 
+
 img {
     width: 60.52px !important;
     position: absolute !important;
@@ -173,6 +174,23 @@ img {
         .d-flex {
             display: inline !important;
         }
+    }
+}
+
+@media (max-width: 445px) {
+    .abs-mg-1 {
+        z-index: 2;
+        left: 1;
+
+    }
+
+    .abs-mg-2 {
+        left: 8.3%;
+        z-index: 1;
+    }
+
+    .abs-mg-3 {
+        left: 18%;
     }
 }
 </style>
