@@ -23,7 +23,21 @@
       <Side-Bar @closeAllBar="ToggleBar()" ref="toggleElement3" />
     </div>
 
-
+    <!--advert section-->
+    <div class="grid-container">
+      <div class="col-sm-5">
+        <div class="ads-h4">Start chatting with customers, anytime, anywhere with Apex</div>
+        <div class="ads-p">Great software that allows you to chat from any place at any time without any interruption.
+        </div>
+        <Custom-Button btnProp="btn-orange btn-56 smaller-pd" icon="icon" title="Start Chatting Now" class="my-4" />
+        <Custom-Img />
+      </div>
+      <div class="col-sm-7">
+        <div class="reading-text">
+          <img src="@/assets/appexpng.png" alt="">
+        </div>
+      </div>
+    </div>
 
 
   </div>
@@ -31,12 +45,14 @@
 
 <script>
 import CustomButton from "@/components/primary/Button.vue";
+import CustomImg from "@/components/primary/CustomImg.vue"
 import SideBar from "@/layout/Layout.vue"
 export default {
   name: "LandingPage",
   components: {
     CustomButton,
-    SideBar
+    SideBar,
+    CustomImg
   },
 
   data() {
