@@ -32,20 +32,15 @@
 
 <script>
 export default {
-
+name: "CustomImg"
 }
 </script>
 
 <style lang="scss" scoped>
-
-
-
-
 img {
     width: 60.52px !important;
     position: absolute !important;
     cursor: pointer;
-
 }
 .abs-mg-1  {
     z-index: 2;

@@ -22,6 +22,7 @@
 import CustomButton from "@/components/primary/Button.vue";
 
 export default {
+  name: "StartSelling",
   components: {
       CustomButton
   }
@@ -29,8 +30,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
 .my-4 {
   margin-top: 40px;
 }

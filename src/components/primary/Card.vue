@@ -6,27 +6,22 @@
                 made such a big difference in only three weeks. Our team is so grateful for the wonderful
                 improvements they made and their ability to get familiar with the concept so quickly.</div>
         </div>
-        <i class="fas fa-caret-down"></i>
     </div>
 </template>
 
 <script>
 export default {
     name: "QuoteCard",
+    data() {
+        return {
+            carret: '231px',
+        }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
 
-.fas,.fa-caret-down {
-position: absolute;
-    width: 26.67px;
-    height: 16.44px;
-    left: 286.67px;
-    top: 231px;
-    font-size: 34px;
-    color: #fff;
-}
 
     .quote-card {
         width: 600px;
@@ -57,4 +52,30 @@ position: absolute;
             padding: 0 50px 29.44px 49px;
         }
     }
+
+    @media (max-width: 1416px) {
+        .quote-card {
+            width: 100%;
+            background: #fff;
+            border-radius: 11.1111px;
+        }
+    }
+
+    @media (max-width: 628px) {
+.quote-card {
+
+    .quote-card-title {
+        font-size: 18px !important;
+        line-height: 26px !important;
+        padding-top: 26px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .quote-card-p {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        padding: 0 16px 14.31px 16px !important;
+    }
+}
+}
 </style>

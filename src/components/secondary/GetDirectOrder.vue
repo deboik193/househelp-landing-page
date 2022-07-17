@@ -31,7 +31,7 @@
 
 <script>
 export default {
-
+name: "GetOrder"
 }
 </script>
 
@@ -43,7 +43,6 @@ export default {
 
 .live-chat {
     background: #F8F8FA;
-    // margin-bottom: 50px;
 
     .live-height {
       height: 645px;

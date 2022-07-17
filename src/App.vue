@@ -21,7 +21,7 @@ html, body {
   background: #fff;
   padding: 0;
   margin: 0;
-  // width: 100% !important;
+  width: 100% !important;
   
   .contentner {
     margin-top: 21px;
