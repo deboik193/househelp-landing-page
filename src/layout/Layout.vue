@@ -42,7 +42,7 @@ methods: {
         bottom: 0;
         background-color: #fff;
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
         animation-name: slidein;
     }
 
