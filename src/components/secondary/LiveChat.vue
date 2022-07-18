@@ -28,17 +28,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.live-chat {
-    background: #F8F8FA;
 
+.live-chat {
+  background: #F8F8FA;
+  
     .live-height {
       height: 585px;
     }
-
+  
     img {
       width: 100;
     }
-
+  
     .live-header {
       font-family: 'U8';
       font-style: normal !important;
@@ -48,7 +49,7 @@ export default {
       color: #1B1C20;
       width: 511px;
     }
-
+  
     .live-p {
       margin-top: 43px;
       width: 440px;
@@ -58,7 +59,7 @@ export default {
       line-height: 30px;
       color: #383A47;
     }
-
+  
     .live-p-2 {
       margin-top: 26px;
       width: 431px;
@@ -123,31 +124,31 @@ export default {
 
 @media (max-width: 1008px) {
 
-    .live-height {
-        height: auto !important;
-        padding: 36.74px 0 46.99px 0;
-      }
-    
-      .live-header {
-        margin-top: 36px;
-        width: fit-content !important;
-        font-size: 28px !important;
-        line-height: 40px !important;
-      }
-    
-      .live-p {
-        width: fit-content !important;
-        margin-top: 28px !important;
-      }
-    
-      .live-p-2 {
-        width: fit-content !important;
-        margin-top: 12px !important;
-      }
-    
-      img {
-        width: 100%;
-      }
+  .live-height {
+      height: auto !important;
+      padding: 36.74px 0 46.99px 0;
+    }
+
+    .live-header {
+      margin-top: 36px;
+      width: fit-content !important;
+      font-size: 28px !important;
+      line-height: 40px !important;
+    }
+
+    .live-p {
+      width: fit-content !important;
+      margin-top: 28px !important;
+    }
+
+    .live-p-2 {
+      width: fit-content !important;
+      margin-top: 12px !important;
+    }
+
+    img {
+      width: 100%;
+    }
   
 }
     

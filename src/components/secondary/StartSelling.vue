@@ -37,12 +37,6 @@ export default {
 .live-chat {
   background: #fff;
 
-  // .col-sm-6 {
-  //   -ms-flex: 0 0 50%;
-  //   flex: 0 0 50%;
-  //   max-width: 50%;
-  // }
-
   .live-height {
     height: 639px;
   }
@@ -77,35 +71,35 @@ export default {
 
 @media (max-width: 627px) {
   .live-height {
-      height: auto !important;
-      padding: 36.74px 0 46.99px 0;
-    }
+    height: auto !important;
+    padding: 36.74px 0 46.99px 0;
+  }
 
-    .flex-wrap {
-      display: flex;
-      flex-wrap: wrap-reverse !important;
-    }
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap-reverse !important;
+  }
 
-    .live-header {
-      margin-top: 36px;
-      width: fit-content !important;
-      font-size: 32px !important;
-      line-height: 40px !important;
-    }
+  .live-header {
+    margin-top: 36px;
+    width: fit-content !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
 
-    .live-p {
-      width: fit-content !important;
-      margin-top: 28px !important;
-    }
+  .live-p {
+    width: fit-content !important;
+    margin-top: 28px !important;
+  }
 
-    .live-p-2 {
-      width: fit-content !important;
-      margin-top: 12px !important;
-    }
+  .live-p-2 {
+    width: fit-content !important;
+    margin-top: 12px !important;
+  }
 
-    img {
-      width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 
 }
 
@@ -113,48 +107,48 @@ export default {
   .live-header {
       width: fit-content !important;
     }
-    .padding-left {
-      padding: 15px !important;
-    }
-    .live-p {
-      width: fit-content !important;
-    }
+  .padding-left {
+    padding: 15px !important;
+  }
+  .live-p {
+    width: fit-content !important;
+  }
 
-    .live-p-2 {
-      width: fit-content !important;
-    }
-    img {
-      width: 100%;
-    }
+  .live-p-2 {
+    width: fit-content !important;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1008px) {
 
-    .live-height {
-        height: auto !important;
-        padding: 36.74px 0 46.99px 0;
-      }
-    
-      .live-header {
-        margin-top: 36px;
-        width: fit-content !important;
-        font-size: 28px !important;
-        line-height: 40px !important;
-      }
-    
-      .live-p {
-        width: fit-content !important;
-        margin-top: 28px !important;
-      }
-    
-      .live-p-2 {
-        width: fit-content !important;
-        margin-top: 12px !important;
-      }
-    
-      img {
-        width: 100%;
-      }
+  .live-height {
+    height: auto !important;
+    padding: 36.74px 0 46.99px 0;
+  }
+
+  .live-header {
+    margin-top: 36px;
+    width: fit-content !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+
+  .live-p {
+    width: fit-content !important;
+    margin-top: 28px !important;
+  }
+
+  .live-p-2 {
+    width: fit-content !important;
+    margin-top: 12px !important;
+  }
+
+  img {
+    width: 100%;
+  }
   
 }
     

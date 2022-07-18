@@ -37,7 +37,6 @@ name: "GetOrder"
 
 <style lang="scss" scoped>
 
-
 .d-flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -131,11 +130,6 @@ name: "GetOrder"
       margin-top: 28px !important;
     }
 
-    .live-p-2 {
-      width: fit-content !important;
-      margin-top: 12px !important;
-    }
-
     img {
       width: 100%;
     }
@@ -152,10 +146,6 @@ name: "GetOrder"
     .live-p {
       width: fit-content !important;
     }
-
-    .live-p-2 {
-      width: fit-content !important;
-    }
     img {
       width: 100%;
     }
@@ -163,31 +153,26 @@ name: "GetOrder"
 
 @media (max-width: 1008px) {
 
-    .live-height {
-        height: auto !important;
-        padding: 36.74px 0 46.99px 0;
-      }
-    
-      .live-header {
-        margin-top: 36px;
-        width: fit-content !important;
-        font-size: 28px !important;
-        line-height: 40px !important;
-      }
-    
-      .live-p {
-        width: fit-content !important;
-        margin-top: 28px !important;
-      }
-    
-      .live-p-2 {
-        width: fit-content !important;
-        margin-top: 12px !important;
-      }
-    
-      img {
-        width: 100%;
-      }
+  .live-height {
+      height: auto !important;
+      padding: 36.74px 0 46.99px 0;
+    }
+  
+    .live-header {
+      margin-top: 36px;
+      width: fit-content !important;
+      font-size: 28px !important;
+      line-height: 40px !important;
+    }
+  
+    .live-p {
+      width: fit-content !important;
+      margin-top: 28px !important;
+    }
+  
+    img {
+      width: 100%;
+    }
   
 }
     

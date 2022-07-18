@@ -137,6 +137,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
+
+
+
 @font-face {
   font-family: 'U8';
   src: url('@/assets/U8-Regular.ttf') format('truetype');
@@ -284,7 +290,9 @@ export default {
   }
 
   ul, .smaller-screen {
-      z-index: 4;      
+      z-index: 4;
+      animation-duration: 1.5s;
+      animation-name: fadein;
   }
 
   .smaller-screen {
@@ -352,6 +360,16 @@ export default {
   .smaller-screen-center {
     display: flex;
     justify-content: center !important;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 3;
   }
 }
 </style>
