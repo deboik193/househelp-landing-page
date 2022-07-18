@@ -1,7 +1,7 @@
 <template>
   <div class="live-chat">
     <div class="contentner">
-      <div class="row live-height ">
+      <div class="row flex-wrap live-height ">
         <div class="col-sm-6 live-chat-content">
           <div class=" padding-left">
             <div class="live-header">Start selling directly inside conversations</div>
@@ -36,6 +36,12 @@ export default {
 
 .live-chat {
   background: #fff;
+
+  // .col-sm-6 {
+  //   -ms-flex: 0 0 50%;
+  //   flex: 0 0 50%;
+  //   max-width: 50%;
+  // }
 
   .live-height {
     height: 639px;
@@ -73,6 +79,11 @@ export default {
   .live-height {
       height: auto !important;
       padding: 36.74px 0 46.99px 0;
+    }
+
+    .flex-wrap {
+      display: flex;
+      flex-wrap: wrap-reverse !important;
     }
 
     .live-header {

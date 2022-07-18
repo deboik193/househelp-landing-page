@@ -6,18 +6,18 @@
           <img src="@/assets/getOrder.png" alt="">
         </div>
         <div class="col-sm-6 live-chat-content">
-          <div class=" padding-left">
+          <div class="padding-left">
             <div class="live-header">Get direct orders from your customers</div>
             <div class="live-p">Create custom landing pages with Rareblocks that converts more visitors than any
               website. With lots of unique blocks easily build a page. There are many variations of passages of
               available.
             </div>
             <div class="kplus-space d-flex">
-              <div class=" d-flex k-space">
+              <div class=" d-flex-wrap k-space">
                 <div class="kplus">4.3K+</div>
                 <div class="ksmall">Website’s Powering</div>
               </div>
-              <div class=" d-flex">
+              <div class=" d-flex-wrap">
                 <div class="kplus">7M+</div>
                 <div class="ksmall">Chats in Last 2022</div>
               </div>
@@ -36,6 +36,12 @@ name: "GetOrder"
 </script>
 
 <style lang="scss" scoped>
+
+
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .d-flex {
   display: flex;
@@ -59,12 +65,12 @@ name: "GetOrder"
       font-size: 48px;
       line-height: 56px;
       color: #1B1C20;
-      width: 499px;
+      max-width: 499px;
     }
 
     .live-p {
       margin-top: 43px;
-      width: 498px;
+      max-width: 498px;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -88,7 +94,7 @@ name: "GetOrder"
     }
 
     .ksmall {
-      width: 77px;
+      max-width: 77px;
       font-family: 'DM Sans';
       font-style: normal;
       font-weight: 400;
@@ -116,6 +122,10 @@ name: "GetOrder"
       line-height: 40px !important;
     }
 
+    .padding-left {
+      padding: 0 !important;
+    }
+
     .live-p {
       width: fit-content !important;
       margin-top: 28px !important;
@@ -137,7 +147,7 @@ name: "GetOrder"
       width: fit-content !important;
     }
     .padding-left {
-      padding: 15px !important;
+      padding: 15px 0px !important;
     }
     .live-p {
       width: fit-content !important;
