@@ -112,7 +112,7 @@ name: "GetOrder"
     .live-header {
       margin-top: 36px;
       width: fit-content !important;
-      font-size: 28px !important;
+      font-size: 32px !important;
       line-height: 40px !important;
     }
 

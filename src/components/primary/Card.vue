@@ -24,9 +24,11 @@ export default {
 
 
     .quote-card {
-        width: 600px;
+        max-width: 600px;
         background: #fff;
         border-radius: 11.1111px;
+        position: relative;
+        height: auto;
 
         .quote-card-title {
             font-style: normal;
@@ -53,9 +55,27 @@ export default {
         }
     }
 
+    .quote-card::after {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-top: 0px solid #fff;
+        border-right: 0px solid #fff;
+        border-bottom: 0px solid #fff;
+        border-left: 0px solid #fff;
+        top: 100%;
+        left: 50%;
+        margin-left:  -25px;
+        content: '';
+        transform: rotate(45deg);
+        margin-top: -25px;
+        background: #fff;
+
+    }
+
     @media (max-width: 1416px) {
         .quote-card {
-            width: 100%;
+            // width: 100%;
             background: #fff;
             border-radius: 11.1111px;
         }
