@@ -26,7 +26,7 @@ html, body {
   .contentner {
     margin-top: 21px;
     margin-left: 9.5%;
-    margin-right: 6% ;
+    padding-right: 6% ;
     overflow: hidden;
   }
 
@@ -46,6 +46,7 @@ html, body {
       .contentner {
           margin-right: auto;
           margin-left: auto;
+          padding-right: 0%;
           width: 1270px;
       }
     }

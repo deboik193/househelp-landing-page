@@ -56,10 +56,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-
-
-
-
 .nav-p {
   display: flex;
   justify-content: space-between;
@@ -68,9 +64,11 @@ export default {
 .justify-content-between {
   justify-content: space-between;
 }
+
 .justify-content-center {
   justify-content: center;
 }
+
 .text-center {
   text-align: center;
 }
@@ -83,6 +81,7 @@ export default {
 .footer {
   background: #F8F8FA;
   padding-top: 105px;
+
   .footer-header {
     width: 739px;
     font-family: 'U8';
@@ -135,9 +134,9 @@ export default {
     cursor: pointer;
   }
 
-  .horizontal-rule { 
-      width: 1296px;
-      border: 1px solid #D4D4D8;
+  .horizontal-rule {
+    width: 1296px;
+    border: 1px solid #D4D4D8;
   }
 
   .copy-right-logo {
@@ -155,20 +154,32 @@ export default {
     color: #797B89;
   }
 
-} 
+}
 
-@media (max-width: 628px) {
+@media (max-width: 627px) {
+
+  .contentner {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    padding: 0 !important;
+  }
+
   .add-space-on-sm {
     padding-bottom: 23.67px;
   }
 
+  ul>li {
+    margin: 0 13px !important;
+  }
+
   .my-4 {
-      margin-top: 30px;
-      margin-bottom: 48.1px;
-    }
+    margin-top: 30px;
+    margin-bottom: 48.1px;
+  }
+
   .footer {
-      padding-top: 40px !important;
-  
+    padding-top: 40px !important;
+
     .footer-header {
       width: 333px !important;
       font-size: 32px !important;
@@ -179,13 +190,14 @@ export default {
       display: block;
       text-align: center;
     }
-  
+
     .nav-list {
       font-size: 16px !important;
     }
-  
+
     ul {
       display: flex;
+      justify-content: center;
       padding: 0 0 30px 0 !important;
     }
     

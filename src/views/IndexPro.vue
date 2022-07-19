@@ -139,10 +139,6 @@ export default {
 <style lang="scss" scoped>
 
 
-
-
-
-
 @font-face {
   font-family: 'U8';
   src: url('@/assets/U8-Regular.ttf') format('truetype');
@@ -158,7 +154,7 @@ export default {
 }
 
 .my-4 {
-  margin: 0 0 114px 0; 
+  margin: 0 0 114px 0;
 }
 
 .contentner {
@@ -169,13 +165,15 @@ export default {
     line-height: 24px;
     color: #1B1C20;
   }
-  
+
   .menu {
-    display: none ;
+    display: none;
   }
+
   .nav {
     display: flex;
   }
+
   ul {
     display: flex;
   }
@@ -222,7 +220,7 @@ export default {
       font-weight: 400;
       font-size: 18px;
       line-height: 32px;
-      color: #383A47;      
+      color: #383A47;
       mix-blend-mode: normal;
       opacity: 0.8;
       width: 440px;
@@ -230,13 +228,14 @@ export default {
       margin: 29px 0;
     }
 
-    .reading-text{
+    .reading-text {
       padding: 0 0 0 5em;
     }
   }
 
   .features {
     margin: 80px 0 65px 0;
+
     .features-header {
       font-family: 'U8';
       font-style: normal;
@@ -247,20 +246,16 @@ export default {
       color: #1B1C20;
       margin-bottom: 46px;
     }
-  }  
+  }
 }
 
 @media (max-width: 1129px) {
   .ads-h4 {
-      width: 509px;
-      height: 120px;
-      font-weight: 700 !important;
-      font-size: 45px !important;
-    }
-
-    .contentner {
-      margin-right: 10px !important;
-    }
+    width: 509px;
+    height: 120px;
+    font-weight: 700 !important;
+    font-size: 45px !important;
+  }
 }
 
 @media (max-width: 1043px) {
@@ -271,12 +266,9 @@ export default {
 
 @media (max-width: 952px) {
   .my-4 {
-      margin: 0 0 36.5px 0 !important;
-    }
-    .contentner {
-      margin-left: 6% !important;
-    }
-  
+    margin: 0 0 36.5px 0 !important;
+  }
+
   .ads-h4 {
     width: 343px !important;
     height: 147px !important;
@@ -289,10 +281,11 @@ export default {
     height: 96px !important;
   }
 
-  ul, .smaller-screen {
-      z-index: 4;
-      animation-duration: 1.5s;
-      animation-name: fadein;
+  ul,
+  .smaller-screen {
+    z-index: 4;
+    animation-duration: 1.5s;
+    animation-name: fadein;
   }
 
   .smaller-screen {
@@ -301,16 +294,18 @@ export default {
     top: 40%;
   }
 
-  .smaller-screen, .block {
+  .smaller-screen,
+  .block {
     display: block;
   }
 
-  .smaller-screen, .mx-3 {
+  .smaller-screen,
+  .mx-3 {
     margin: 0 0 15px 0 !important;
   }
 
   li {
-      height: 36px;
+    height: 36px;
   }
 
   ul {
@@ -320,17 +315,20 @@ export default {
     top: 8%;
   }
 
-    .hideOnLargeScreen {
-      display: none !important;
-    }
+  .hideOnLargeScreen {
+    display: none !important;
+  }
 
   .menu {
-      cursor: pointer;
-      display: block !important;
+    cursor: pointer;
+    display: block !important;
   }
 }
 
 @media (max-width: 627px) {
+  .contentner {
+    margin-left: 6% !important;
+  }
   .grid-container {
       margin: 8px 0 !important;
   }

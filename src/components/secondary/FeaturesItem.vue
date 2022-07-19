@@ -24,7 +24,7 @@ props: ['image', 'title']
 <style lang="scss" scoped>
 
 .feature-card {
-    // width: 416px;
+    max-width: 416px;
     margin-right: 10px;
     height: 153px;
     background: #FFFFFF;
@@ -68,7 +68,7 @@ props: ['image', 'title']
 .feature-card {
     text-align: center;
     margin-bottom: 25px;
-    width: 416px;
+    max-width: 416px;
     margin-right: 0;
     background: #FFFFFF;
     border-radius: 5px;

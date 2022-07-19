@@ -37,6 +37,7 @@ name: "GetOrder"
 
 <style lang="scss" scoped>
 
+
 .d-flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -109,6 +110,9 @@ name: "GetOrder"
 }
 
 @media (max-width: 627px) {
+  .contentner {
+      margin-left: 6% !important;
+    }
   .live-height {
       height: auto !important;
       padding: 36.74px 0 46.99px 0;

@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .my-4 {
   margin-top: 40px;
 }
@@ -70,6 +71,9 @@ export default {
 }
 
 @media (max-width: 627px) {
+  .contentner {
+      margin-left: 6% !important;
+    }
   .live-height {
     height: auto !important;
     padding: 36.74px 0 46.99px 0;

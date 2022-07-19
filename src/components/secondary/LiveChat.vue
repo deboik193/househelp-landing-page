@@ -29,6 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 
+
 .live-chat {
   background: #F8F8FA;
   
@@ -75,6 +76,9 @@ export default {
 }
 
 @media (max-width: 627px) {
+  .contentner {
+      margin-left: 6% !important;
+    }
   .live-height {
       height: auto !important;
       padding: 36.74px 0 46.99px 0;
