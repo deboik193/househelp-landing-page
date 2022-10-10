@@ -25,6 +25,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         server: ngvip7.afeeshost.com
-        username: ${{ FTP_STAGING_USERNAME }}
-        password: ${{ FTP_STAGING_PWD }}
+        username: ${{ secrets.ftp_staging_username }}
+        password: ${{ secrets.ftp_staging_pwd }}
         server-dir: /public_html/staging.househelp.com.ng
