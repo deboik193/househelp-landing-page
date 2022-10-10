@@ -39,9 +39,6 @@ jobs:
 
       - name: Download artifact
         uses: actions/download-artifact@v2
-        with:
-          name: dist
-          path: dist
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
