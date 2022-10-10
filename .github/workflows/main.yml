@@ -50,4 +50,3 @@ jobs:
           username: ${{ secrets.ftp_staging_username }}
           password: ${{ secrets.ftp_staging_pwd }}
           path: dist # Folder to deploy Ex: apps/frontend/dist or dist
-          into: web # Where to place the files in your ftp
