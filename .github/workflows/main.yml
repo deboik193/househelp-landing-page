@@ -27,4 +27,3 @@ jobs:
         server: ngvip7.afeeshost.com
         username: ${{ secrets.ftp_staging_username }}
         password: ${{ secrets.ftp_staging_pwd }}
-        server-dir: /public_html/staging.househelp.com.ng/
