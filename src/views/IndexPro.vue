@@ -360,14 +360,4 @@ export default {
     justify-content: center !important;
   }
 }
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 3;
-  }
-}
 </style>

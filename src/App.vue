@@ -288,4 +288,33 @@ html, body {
   scrollbar-color: #797B89 rgb(210, 210, 210) !important;
 }
 
+@keyframes slidein {
+  from {
+    position: fixed;
+    z-index: 1;
+    width: 100px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  to {
+    position: fixed;
+    z-index: 1;
+    width: 320px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 3;
+  }
+}
 </style>

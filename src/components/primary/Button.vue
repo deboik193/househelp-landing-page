@@ -29,8 +29,8 @@ export default {
 }
 
 .btn-orange:hover {
-    background: #FB8E0B0D;
-    color: #FB8E0B;
+    background: #fb8f0ba5;
+    color: #FFF;
 }
 
 .btn-black:hover {

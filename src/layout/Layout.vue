@@ -56,24 +56,4 @@ methods: {
         color: #FB8E0B;
     }
 }
-
-@keyframes slidein {
-    from {
-        position: fixed;
-        z-index: 1;
-        width: 100px;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-
-    to {
-        position: fixed;
-        z-index: 1;
-        width: 320px;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-}
 </style>
