@@ -87,10 +87,7 @@
 /* FEATURES SECTION */
 /*=====================================================*/
 .featuresSection {
-  display: flex;
   padding: 100px 50px;
-  align-items: center;
-  flex-direction: column;
 }
 
 .featuresSection>b {
@@ -381,6 +378,8 @@
   line-height: 24px;
 }
 
+
+
 /*======================================*/
 /* MEDIA QUERY FOR DESKTOP */
 /*======================================*/
@@ -432,6 +431,7 @@
   .introSection .leftSection .ratingCon .column span {
     font-size: 13px;
   }
+
   /*  */
   .featuresSection .row,
   .featuresSection .row .featureCon,

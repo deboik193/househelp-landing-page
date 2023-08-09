@@ -7,7 +7,7 @@
 
 .header .image {
     height: 40px;
-    width: fit-content;
+    width: 170px;
     object-fit: contain;
 }
 
