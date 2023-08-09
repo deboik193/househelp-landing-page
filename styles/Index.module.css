@@ -1,0 +1,563 @@
+/*=====================================================*/
+/* INTRO SECTION */
+/*=====================================================*/
+.introSection {
+  display: flex;
+  padding: 20px 50px 0;
+  height: calc(100vh - 70px);
+}
+
+.introSection .leftSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.introSection .leftSection>h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.introSection .leftSection>span {
+  width: 60%;
+  line-height: 30px;
+}
+
+.introSection .leftSection>button {
+  border: none;
+  height: 56px;
+  width: fit-content;
+  outline: none;
+  cursor: pointer;
+  padding: 0 20px;
+  border-radius: 8px;
+  background: #4DA44E;
+}
+
+.introSection .leftSection .ratingCon {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.introSection .leftSection .ratingCon .userImage {
+  height: 100%;
+  width: fit-content;
+  margin-right: -10px;
+}
+
+.introSection .leftSection .ratingCon .spacer {
+  width: 50px;
+}
+
+.introSection .leftSection .ratingCon .divider {
+  height: 70%;
+  width: 2px;
+  margin: 0 20px;
+  background: #000;
+}
+
+.introSection .leftSection .ratingCon .column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.introSection .leftSection .ratingCon .column>b {
+  font-size: 25px;
+}
+
+.introSection .leftSection .ratingCon .column>span {
+  font-size: 14px;
+}
+
+.introSection .rightSection {
+  width: 50%;
+}
+
+.introSection .rightSection .image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*=====================================================*/
+/* FEATURES SECTION */
+/*=====================================================*/
+.featuresSection {
+  display: flex;
+  padding: 100px 50px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.featuresSection>b {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+}
+
+.featuresSection .row {
+  display: flex;
+  margin: 50px 0 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.featuresSection .row .featureCon {
+  display: flex;
+}
+
+.featuresSection .row .featureCon .icons {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  border-radius: 50px;
+}
+
+.featuresSection .row .featureCon .icons>* {
+  place-self: center;
+}
+
+.featuresSection .row .featureCon:nth-child(1) .icons {
+  background: #fd5f0352;
+  color: #FD6003;
+}
+
+.featuresSection .row .featureCon:nth-child(2) .icons {
+  background: #4da44f52;
+  color: #4DA44E;
+}
+
+.featuresSection .row .featureCon:nth-child(3) .icons {
+  background: #fb8f0b52;
+  color: #FB8E0B;
+}
+
+.featuresSection .row .featureCon .column {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  width: calc(100% - 60px);
+}
+
+.featuresSection .row .featureCon .column b {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.featuresSection .row .featureCon .column span {
+  line-height: 24px;
+}
+
+/*=====================================================*/
+/* MEET YOUR CUSTOMER SECTION */
+/*=====================================================*/
+.meetCust {
+  display: flex;
+  padding: 105px 50px;
+  align-items: center;
+  background: #F8F8FA;
+}
+
+.meetCust .img {
+  width: 50%;
+  object-fit: contain;
+  padding: 0 50px 0 0;
+}
+
+.meetCust .con {
+  width: 50%;
+  display: flex;
+  margin: 0 0 0 50px;
+  flex-direction: column;
+}
+
+.meetCust .con b {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 30px;
+}
+
+
+/*=====================================================*/
+/* START SELLING DIRECTLY */
+/*=====================================================*/
+.forthSection {
+  display: flex;
+  padding: 100px 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forthSection .img {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.forthSection .column {
+  width: 50%;
+  display: flex;
+  margin: 0 50px 0 0;
+  flex-direction: column;
+}
+
+.forthSection .column b {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.forthSection .column span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 50px 0;
+}
+
+.forthSection .column button {
+  border: none;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  padding: 0 20px;
+  font-weight: bold;
+  width: fit-content;
+  border-radius: 10px;
+  background: #4DA44E;
+}
+
+/*=====================================================*/
+/* INBOX SECTION COMPONENT */
+/*=====================================================*/
+.inboxSection {
+  display: flex;
+  align-items: center;
+  padding: 100px 50px;
+  background: #F8F8FA;
+  justify-content: space-between;
+}
+
+.inboxSection .column {
+  width: 50%;
+  display: flex;
+  margin: 0 40px 0 0;
+  flex-direction: column;
+}
+
+.inboxSection .column>b {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.inboxSection .column>span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 30px 0 60px 0;
+}
+
+.inboxSection .column .row {
+  display: flex;
+}
+
+.inboxSection .column .row .smCon {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.inboxSection .column .row .smCon b {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 56px;
+  margin-right: 20px;
+}
+
+.inboxSection .column .row .smCon span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.inboxSection>.img {
+  width: 50%;
+  margin: 0 50px 0 0;
+  object-fit: contain;
+}
+
+/*=====================================================*/
+/* TESTIMONIAL COMPONENT */
+/*=====================================================*/
+.testimonialSection {
+  display: flex;
+  align-items: center;
+  background: #77DF75;
+  flex-direction: column;
+  padding: 100px 50px 100px;
+}
+
+.testimonialSection>b {
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 56px;
+  margin-bottom: 60px;
+}
+
+.testimonialSection .testimonialConRow {
+  display: flex;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon {
+  width: 50%;
+  margin: 0 50px;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon .testimonialCard {
+  display: flex;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 60px;
+  align-items: center;
+  background: #f5f5f5;
+  flex-direction: column;
+  border-radius: 11.1111px;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon .testimonialCard::before {
+  top: 100%;
+  content: "";
+  position: absolute;
+  border-top: 10px solid #f5f5f5;
+  border-left: 10px solid #77DF75;
+  border-right: 10px solid #77DF75;
+  border-bottom: 10px solid #77DF75;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon .testimonialCard b {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4DA44E;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon .testimonialCard span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #383A47;
+  margin-top: 20px;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon .userCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon .userCon .column {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon .userCon .column .userName {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.testimonialSection .testimonialConRow .testimonialCon .userCon .column .userRole {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*======================================*/
+/* MEDIA QUERY FOR DESKTOP */
+/*======================================*/
+@media only screen and (max-width: 600px) {
+
+  .featuresSection,
+  .introSection,
+  .forthSection,
+  .inboxSection,
+  .testimonialSection,
+  .meetCust {
+    padding: 50px 20px;
+    overflow: hidden;
+  }
+
+  /*  */
+  .introSection {
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .introSection .leftSection,
+  .introSection .rightSection {
+    width: 100%;
+  }
+
+  .introSection .leftSection h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .introSection .leftSection>span {
+    margin: 30px 0;
+  }
+
+  .introSection .leftSection .ratingCon {
+    margin: 50px 0;
+  }
+
+  .introSection .leftSection .ratingCon .userImage {
+    width: 40px;
+    height: 40px;
+  }
+
+  .introSection .leftSection .ratingCon .column b {
+    font-size: 20px;
+  }
+
+  .introSection .leftSection .ratingCon .column span {
+    font-size: 13px;
+  }
+  /*  */
+  .featuresSection .row,
+  .featuresSection .row .featureCon,
+  .featuresSection .row .featureCon .column {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .featuresSection b {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .featuresSection .row .featureCon:nth-child(2) {
+    margin: 50px 0;
+  }
+
+  /*  */
+  .meetCust {
+    flex-direction: column;
+  }
+
+  .meetCust .img {
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+    height: fit-content;
+  }
+
+  .meetCust .con {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .meetCust .con b {
+    margin: 30px 0;
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .meetCust .con span {
+    margin: 0;
+  }
+
+  /*  */
+  .forthSection {
+    flex-direction: column-reverse;
+  }
+
+  .forthSection .column,
+  .forthSection .img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .forthSection .img {
+    margin-bottom: 50px;
+  }
+
+  .forthSection .column b {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  /*  */
+  .inboxSection {
+    flex-direction: column;
+  }
+
+  .inboxSection .img,
+  .inboxSection .column {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+  }
+
+  .inboxSection .column>b {
+    font-size: 25px;
+    margin-top: 50px;
+    line-height: normal;
+  }
+
+  .inboxSection .column .row {
+    justify-content: space-between;
+  }
+
+  .inboxSection .column .row .smCon {
+    width: fit-content;
+  }
+
+  .inboxSection .column .row .smCon b {
+    font-size: 25px;
+  }
+
+  .inboxSection .column .row .smCon span {
+    font-size: 13px;
+    justify-content: space-between;
+  }
+
+  /*  */
+  .testimonialSection {
+    flex-direction: column;
+
+  }
+
+  .testimonialSection b {
+    font-size: 25px;
+    text-align: center;
+    line-height: normal;
+
+  }
+
+  .testimonialSection .testimonialConRow {
+    flex-direction: column;
+  }
+
+  .testimonialSection .testimonialConRow .testimonialCon {
+    width: 100%;
+    margin: 0;
+  }
+
+  .testimonialSection .testimonialConRow .testimonialCon:nth-child(1) {
+    margin-bottom: 40px;
+  }
+}

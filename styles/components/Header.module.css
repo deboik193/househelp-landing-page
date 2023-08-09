@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    padding: 10px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .image {
+    height: 40px;
+    width: fit-content;
+    object-fit: contain;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header ul li {
+    margin: 0 20px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+}
+
+.header ul li::after {
+    width: 0;
+    height: 0;
+    top: 125%;
+    opacity: 0;
+    content: "";
+    left: -2.5px;
+    transition: 0.5s;
+    color: #4DA44E;
+    position: absolute;
+    border-radius: 5px;
+    border: 2.5px solid #4DA44E;
+}
+
+.header ul li:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
+.header .menuIcon {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header .memu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .regCon span {
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 30px;
+    position: relative;
+}
+
+.header .regCon span::after {
+    height: 0;
+    top: 125%;
+    width: 10px;
+    content: "";
+    left: -1.5px;
+    transition: 0.5s;
+    color: #4DA44E;
+    position: absolute;
+    border-radius: 5px;
+    border: 2.5px solid #4DA44E;
+}
+
+.header .regCon span:hover::after {
+    width: 100%;
+}
+
+.header .regCon button {
+    border: none;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    padding: 0 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #4DA44E;
+}
+
+
+/*======================================*/
+/* MEDIA QUERY FOR DESKTOP */
+/*======================================*/
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 10px 20px;
+    }
+    .header .memu{
+        display: none;
+    }
+    .header .menuIcon{
+        display: block;
+    }
+}
