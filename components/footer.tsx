@@ -8,6 +8,7 @@ import {
   faTwitter,
   faFacebookF,
   faInstagram,
+  faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
 
 //====================================================
@@ -15,7 +16,7 @@ import {
 //====================================================
 export default class FooterComponent extends React.Component {
   render() {
-    let pages: string[] = ["About", "Features", "Works", "Support"];
+    let pages: object[] = [{ title: "Become a Help", link: "https://househelp.onrender.com" }, { title: "Why Us", link: "/about-us" }, { title: "Contact", link: "/contact" }];
     let socialLinksData: object[] = [
       {
         links: "https://twitter.com",
@@ -37,18 +38,21 @@ export default class FooterComponent extends React.Component {
       },
     ];
     return (
-      <footer className={styles.footer}>
+      < footer className={styles.footer} >
         <section className={styles.topFooter}>
           <b>
-            Ready to grow your business? Start with Apex, become faster every
-            second
+            Do you wish to speak with our customer support ?
           </b>
-          <button>Start Chatting Now</button>
+          <Link target="_blank" href={'https://api.whatsapp.com/send?phone=+2349125273293&text=Good day, my name is '}>
+            <button className="flex items-center"><FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 mr-3" /> Start Chatting Now</button>
+          </Link>
           <div className={styles.row}>
-            <Image src={logo} alt="Website Logo" className={styles.image} />
+            <Link href={'/'}>
+              <Image src={logo} alt="Website Logo" className={styles.image} />
+            </Link>
             <ul>
               {pages.map((val, i) => {
-                return <li key={i}>{val}</li>;
+                return <Link key={i} href={val["link"]}><li>{val["title"]}</li></Link>;
               })}
             </ul>
             <span className={styles.socialLinks}>
@@ -63,10 +67,10 @@ export default class FooterComponent extends React.Component {
           </div>
         </section>
         <section className={styles.bottomFooter}>
-          <span>© Copyright 2022, All Rights Reserved</span>
+          <span>© Copyright {new Date().getFullYear()}, All Rights Reserved</span>
           <div className={styles.row}>
-            <span>Privacy Policy</span>
-            <span>Terms & Conditions</span>
+            <Link href="/privacy"><span>Privacy Policy</span></Link>
+            <Link href="/t&c"><span>Terms & Conditions</span></Link>
           </div>
         </section>
       </footer>

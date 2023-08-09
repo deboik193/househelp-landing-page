@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="icon" href="./icon.ico" sizes="32x32" />
+        <link rel="icon" href="./favicon.ico" sizes="32x32" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

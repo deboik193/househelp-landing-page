@@ -1,21 +1,17 @@
-import user1 from "../assets/images/user1.png";
-import user2 from "../assets/images/user2.png";
-import user3 from "../assets/images/user3.png";
-import groupMobile from "../assets/images/group-mobile.svg";
-import inbox from "../assets/images/inbox.png";
-import photo1 from "../assets/images/photo1.png";
-import photo2 from "../assets/images/photo2.png";
 import styles from "../styles/Index.module.css";
 import Image, { StaticImageData } from "next/image";
+import Head from 'next/head';
 import womanVideo from "../assets/images/video.png";
-import smillingWoman from "../assets/images/woman.png";
+import happyFamily from "../assets/images/helpandfamily.jpeg";
+import supportSystem from "../assets/images/support.svg";
+import family from "../assets/images/family.jpg";
+import helping from "../assets/images/helping.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
-  faClock,
   faStar,
-  faVideo,
-  faWifi,
+  faPenToSquare,
+  faTags,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
@@ -23,11 +19,13 @@ export default function Home() {
   return (
     <>
       <IntroComponent />
+      <Tutorial />
       <FeaturesComponent />
+      <ReliablePerson />
+      <CleanerComponent />
       <MeetCustomerComponent />
       <ForthSectionComponent />
       <InboxSectionComponent />
-      <TestimonialComponent />
     </>
   );
 }
@@ -37,56 +35,69 @@ export default function Home() {
 //==========================================
 export class IntroComponent extends React.Component {
   render() {
-    let userImg: StaticImageData[] = [user1, user2, user3];
     return (
       <section className={styles.introSection}>
+        <Head>
+          <title>
+            Everyone needs help - maid is a career
+          </title>
+          <meta
+            name="This is where a skilled and dependable house help becomes an invaluable asset, contributing to the overall well-being and harmony of a household"
+            content="Get a valuable and affordable house help service without breaking the bank"
+            key="desc"
+          />
+        </Head>
         <div className={styles.leftSection}>
-          <h1>Start chatting with customers, anytime, anywhere with Apex</h1>
-          <span>
-            Great software that allows you to chat fromany place at any time
-            without any interruption
-          </span>
-          <button>
-            Start Chatting Now <FontAwesomeIcon icon={faArrowRight} />
+          <h1>A happy home deserve a help who will not only complete chores but becomes a family. </h1>
+          <p className="text-xl">
+            A good house help is not just someone who completes chores but someone who becomes an integral part of the family, sharing responsibilities and making life more manageable.
+          </p>
+          <button className="text-white">
+            Get started <FontAwesomeIcon icon={faArrowRight} />
           </button>
-          <div className={styles.ratingCon}>
-            {userImg.map((val, i) => (
-              <Image
-                key={i}
-                src={val}
-                alt="user faces"
-                className={styles.userImage}
-              />
-            ))}
-            <div className={styles.spacer}></div>
-            <div className={styles.column}>
-              <b>2,291</b>
-              <span>Happy Customers</span>
-            </div>
-            <div className={styles.divider}></div>
-            <div className={styles.column}>
-              <b>4.8/5</b>
-              <span>
-                {["", "", "", "", ""].map((_, i) => (
-                  <FontAwesomeIcon
-                    key={i}
-                    icon={faStar}
-                    style={{ color: i == 4 ? "#5B7486" : "#77DF75" }}
-                  />
-                ))}
-                &nbsp; Rating
-              </span>
-            </div>
-          </div>
         </div>
         <div className={styles.rightSection}>
           <Image
-            src={smillingWoman}
-            alt="Smillimg african woman"
+            src={happyFamily}
+            alt="happy african family"
             className={styles.image}
           />
         </div>
       </section>
+    );
+  }
+}
+
+export class Tutorial extends React.Component {
+  render() {
+    const reliableSystem: { icon: any, title: string, text: string }[] = [
+      { icon: faPenToSquare, title: "No Cost to join", text: "You can register to render help or as an employer, either way we have made the system stress free for very one" },
+      { icon: faTags, title: "Choose from our categories", text: "As a help choose from a list of categories and complete your KYC and you're set to go." },
+      { icon: faStar, title: "Work with the best—without breaking the bank", text: "Our system merges list of help without affordable price." },
+    ];
+    return (
+      <section className={`${styles.introSection} bg-slate-50`}>
+        <div className={styles.rightSection}>
+          <Image
+            src={supportSystem}
+            alt="support system image"
+            className={styles.image}
+          />
+        </div>
+        <div className={styles.leftSection}>
+          <h1>Reliable Support System </h1>
+          <p className="text-xl">A competent house help provides a reliable support system that enables busy individuals or families to focus on their careers and personal lives without being overwhelmed by domestic tasks. </p>
+          <ul className="space-y-14">
+            {reliableSystem.map((item, index) => (
+              <li key={index}>
+                <><FontAwesomeIcon icon={item.icon} className="text-2xl mr-3" /> <span className="text-xl font-bold">{item.title}</span></>
+                <p className="mt-2 text-lg">{item.text}</p>
+              </li>
+            ))}
+          </ul>
+          <button className="text-white ">Get started</button>
+        </div>
+      </section >
     );
   }
 }
@@ -98,34 +109,56 @@ export class FeaturesComponent extends React.Component {
   render() {
     let featuresData = [
       {
-        icon: <FontAwesomeIcon icon={faVideo} />,
-        title: "Video messaging",
-        description:
-          "This software is very easy for you to manage. You can use it as you wish.",
+        icon: <FontAwesomeIcon icon={faStar} />,
+        title: "Category 1",
+        rating: "4.8/5"
       },
       {
-        icon: <FontAwesomeIcon icon={faClock} />,
-        title: "Save your time",
-        description:
-          "This software is very easy for you to manage. You can use it as you wish.",
+        icon: <FontAwesomeIcon icon={faStar} />,
+        title: "Category 2",
+        rating: "4.8/5"
       },
       {
-        icon: <FontAwesomeIcon icon={faWifi} />,
-        title: "Keep safe & private",
-        description:
-          "This software is very easy for you to manage. You can use it as you wish.",
+        icon: <FontAwesomeIcon icon={faStar} />,
+        title: "Category 3",
+        rating: "4.8/5"
+      },
+      {
+        icon: <FontAwesomeIcon icon={faStar} />,
+        title: "Category 4",
+        rating:
+          "4.8/5",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faStar} />,
+        title: "Category 5",
+        rating:
+          "4.8/5",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faStar} />,
+        title: "Category 6",
+        rating:
+          "4.8/5",
       },
     ];
     return (
       <section className={styles.featuresSection}>
-        <b>Features for a better experience</b>
-        <div className={styles.row}>
+        <h1 className="text-center text-[45px] font-bold pb-8">Browse Skills by Categories</h1>
+        <p className="w-3/4 mx-auto text-center pb-10 text-xl">In the fast-paced world we inhabit today, the demands of work, family, and personal pursuits often leave us with limited time to attend to the myriad tasks that keep a household running smoothly. This is where a skilled and dependable house help becomes an invaluable asset, contributing to the overall well-being and harmony of a household.</p>
+        <div className="grid grid-cols-4 gap-5">
           {featuresData.map((val, i) => (
-            <div className={styles.featureCon} key={i}>
-              <div className={styles.icons}>{val.icon}</div>
-              <div className={styles.column}>
-                <b>{val.title}</b>
-                <span>{val.description}</span>
+            <div className="h-32 cursor-pointer col-span-1 p-2 outline outline-green-50 outline-1 bg-green-50 hover:bg-green-100" key={i}>
+              <div className={`${styles.column} space-y-5 p-3`}>
+                <h1 className="text-[25px] font-medium capitalize">{val.title}</h1>
+                <aside className="flex space-x-16">
+                  <div>
+                    <span className="text-green-700 mr-2">{val.icon}</span>
+                    <span>{val.rating}</span>
+                  </div>
+                  <aside>214 Skills</aside>
+                </aside>
+
               </div>
             </div>
           ))}
@@ -136,6 +169,59 @@ export class FeaturesComponent extends React.Component {
 }
 
 //==========================================
+// show someone on a wheel chair
+//==========================================
+
+export class ReliablePerson extends React.Component {
+  render() {
+    return (
+      <section className="bg-green-400 w-9/12 mx-auto rounded-xl flex">
+        <aside className="p-8 space-y-8 w-full  ">
+          <h3 className="font-bold text-xl">Skill Set and Adaptability</h3>
+          <h1 className="tracking-wide font-mono font-bold text-3xl">A standout house help possesses a diverse skill set that goes beyond mundane chores. </h1>
+          <p className="text-xl">Cooking nutritious and delicious meals, managing household finances, caring for children and pets, and even assisting with administrative tasks are all part of their repertoire. </p>
+          <button className="bg-blue-900">Find Help</button>
+        </aside>
+        <section
+          className="rounded-r-xl bg-[url('../assets/images/wheel.webp')] bg-cover bg-no-repeat bg-blend-overlay bg-opacity-50 bg-green-950 hidden sm:block w-full"
+        ></section>
+      </section>
+    )
+  }
+}
+
+//==========================================
+// CLEANER AT YOUR SERVICE SECTION
+//==========================================
+export class CleanerComponent extends React.Component {
+  render() {
+    const cleanliness: { title: string, pointer: string }[] = [
+      { title: "Find Skills and hire a pro", pointer: "Register" },
+      { title: "Browse through categories", pointer: "Learn More" },
+      { title: "Become a helper, and earn", pointer: "Register" },
+    ]
+    return (
+      <section className="text-white my-20 bg-[url('../assets/images/cleaner.avif')] bg-cover bg-center bg-no-repeat h-screen flex items-center">
+        <aside className="p-10 backdrop-brightness-75 w-full items-center space-y-14 h-screen">
+          <h3 className="text-[25px] font-bold tracking-wide">House Help Made Easy</h3>
+          <h1 className="text-[45px] font-bold font-sans w-1/3">Maintaining Cleanliness and Order:</h1>
+          <p className="text-xl w-1/3">From cleaning and cooking to laundry and organizing, a capable house help ensures that the home remains a comfortable and welcoming space, allowing its occupants to recharge and unwind after a hectic day.</p>
+          <div className="grid grid-cols-3 gap-10">
+            {cleanliness.map((item, index) => (
+              <aside key={index} className="bg-green-600 cursor-pointer space-y-5 rounded-xl p-5 hover:bg-white hover:text-green-600">
+                <h1 className="text-[33px] font-bold w-2/3">{item.title}</h1>
+                <p className="text-xl font-medium space-x-8"><span>{item.pointer}</span>
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </p>
+              </aside>
+            ))}
+          </div>
+        </aside>
+      </section>
+    );
+  }
+}
+//==========================================
 // MEET YOUR CUSTOMER SECTION
 //==========================================
 export class MeetCustomerComponent extends React.Component {
@@ -144,18 +230,15 @@ export class MeetCustomerComponent extends React.Component {
       <section className={styles.meetCust}>
         <Image src={womanVideo} alt="Video of a Woman" className={styles.img} />
         <div className={styles.con}>
-          <b>Meet your customers, with live video chat</b>
-          <span>
-            Proin faucibus nibh et sagittis a. Lacinia purus ac amet
-            pellentesque aliquam enim, Lacinia purus ac amet pellentesque
-            aliquam enim.
-          </span>
-          <br/>
-          <span>
-            Get paychecks up to two days early. Get a $20 bonus when you receive
-            qualifying direct deposits, Lacinia purus ac amet pellentesque
-            aliquam enim.
-          </span>
+          <b>2 minutes video interview of house help volunteer</b>
+          <p className="text-xl">
+            Furthermore, a skilled house help demonstrates adaptability by quickly learning and implementing new routines, accommodating changing schedules, and efficiently managing unexpected situations. As an employer you are previledged to watch a video of a help before hiring.
+          </p>
+          <p className="text-xl my-8">
+            A clean and organized home is essential for maintaining physical and mental well-being. A proficient house help takes pride in upholding high standards of cleanliness, ensuring that living spaces are not just tidy but also sanitized.
+            They adeptly organize and declutter spaces, contributing to an environment that promotes positivity and reduces stress.
+          </p>
+          <button>Hire a help</button>
         </div>
       </section>
     );
@@ -169,36 +252,41 @@ export class ForthSectionComponent extends React.Component {
   render() {
     return (
       <section className={styles.forthSection}>
-        <div className={styles.column}>
-          <b>Start selling directly inside conversations</b>
-          <span>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered all injected humour or randomised words
-            which don&apos;t look even slightly believable.{" "}
-          </span>
+        <div className={`${styles.column} space-y-8`}>
+          <h3 className="text-xl font-light tracking-wide">We are the African no.1 house help hiring platform</h3>
+
+          <b>Nurturing a Family Atmosphere:</b>
+          <p className="text-xl">
+            Beyond tasks and responsibilities, an exceptional house help contributes to fostering a warm and harmonious family atmosphere. Their presence adds an element of continuity, providing a sense of stability and routine for both adults and children.
+          </p>
+          <p className="text-xl">
+            A good house help often forms deep bonds with family members, becoming a confidant, mentor, and friend to those they serve.
+          </p>
           <button>Start Chatting Now</button>
         </div>
-        <Image src={groupMobile} alt="Video of a Woman" className={styles.img} />
+        <Image src={family} alt="Video of a family" className={styles.img} />
       </section>
     );
   }
 }
 
 //==========================================
-// INBOX SECTION COMPONENT
+// Respectful communication
 //==========================================
 export class InboxSectionComponent extends React.Component {
   render() {
     return (
       <section className={styles.inboxSection}>
-        <Image src={inbox} alt="Video of a Woman" className={styles.img} />
-        <div className={styles.column}>
-          <b>Get direct orders from your customers</b>
-          <span>
-            Create custom landing pages with Rareblocks that converts more
-            visitors than any website. With lots of unique blocks easily build a
-            page. There are many variations of passages of available.{" "}
-          </span>
+        <Image src={helping} alt="helping elderly people" className={styles.img} />
+        <div className={`${styles.column} space-y-8`}>
+          <b>Respectful Communication and Boundaries:</b>
+          <p className="text-xl first-letter">
+            Effective communication and understanding of boundaries are key qualities of a reliable house help. They respect the privacy of the family while also establishing open lines of communication, allowing for smooth coordination of tasks and preferences.
+          </p>
+          <p className="text-xl first-letter">
+            This balance ensures that everyone feels comfortable and heard, enhancing the overall household experience.
+          </p>
+
           <div className={styles.row}>
             <div className={styles.smCon}>
               <b>4.3K+</b>
@@ -219,57 +307,3 @@ export class InboxSectionComponent extends React.Component {
   }
 }
 
-//==========================================
-// TESTIMONIAL COMPONENT
-//==========================================
-export class TestimonialComponent extends React.Component {
-  render() {
-    let testimonialData: object[] = [
-      {
-        title: "“Incredible Experience”",
-        content:
-          "We had an incredible experience working with Mixland and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.",
-        userName: "Wade Warren",
-        userRole: "CEO, ABC Corporation",
-        userImg: photo1,
-      },
-      {
-        title: "“Dependable, Responsive, Professional”",
-        content:
-          "Fermin Apps has collaborated with Mixland team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. The team is always thinking beyond.",
-        userName: "Esther Howard",
-        userRole: "CEO, ABC Corporation",
-        userImg: photo2,
-      },
-    ];
-    return (
-      <section className={styles.testimonialSection}>
-        <b>Our blessed client said about us 😍</b>
-        <div className={styles.testimonialConRow}>
-        {testimonialData.map((val, i) => {
-          return (
-            <div className={styles.testimonialCon} key={i}>
-              <div className={styles.testimonialCard}>
-                <b className={styles.title}>{val['title']}</b>
-                <span className={styles.content}>{val['content']}</span>
-              </div>
-              <div className={styles.userCon}>
-                <Image
-                  src={val['userImg']}
-                  alt="Video of a Woman"
-                  className={styles.img}
-                />
-                <div className={styles.column}>
-                  <span className={styles.userName}>{val['userName']}</span>
-                  <span className={styles.userRole}>{val['userRole']}</span>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-
-        </div>
-      </section>
-    );
-  }
-}
