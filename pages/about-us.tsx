@@ -57,7 +57,7 @@ export class AboutComponent extends React.Component {
 //==========================================
 export class TrustIssuesComponent extends React.Component {
   render() {
-    const pointsToChose: object = [
+    const pointsToChose: {title: string, text: string}[] = [
       { title: "Trust Issues", text: "Inviting someone into your home requires a level of trust, and there can be concerns about theft, misconduct, or confidentiality breaches."},
       { title: "Financial Costs", text: "Hiring house help can be expensive, as it involves salaries or wages, benefits, and potential legal responsibilities such as taxes and insurance."},
       { title: "Legal and Ethical Considerations", text: "Depending on your location, hiring house help might involve legal obligations, such as adhering to labor laws, obtaining work permits, and providing fair compensation."},
