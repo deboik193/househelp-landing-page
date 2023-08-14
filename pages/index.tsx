@@ -1,5 +1,5 @@
 import styles from "../styles/Index.module.css";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Head from 'next/head';
 import womanVideo from "../assets/images/video.png";
 import happyFamily from "../assets/images/helpandfamily.jpeg";
@@ -95,7 +95,7 @@ export class Tutorial extends React.Component {
               </li>
             ))}
           </ul>
-          <button className="text-white ">Get started</button>
+          <button className="text-white">Get started</button>
         </div>
       </section >
     );
@@ -150,8 +150,8 @@ export class FeaturesComponent extends React.Component {
           {featuresData.map((val, i) => (
             <div className="h-32 cursor-pointer col-span-1 p-2 outline outline-green-50 outline-1 bg-green-50 hover:bg-green-100" key={i}>
               <div className={`${styles.column} space-y-5 p-3`}>
-                <h1 className="text-[25px] font-medium capitalize">{val.title}</h1>
-                <aside className="flex space-x-16">
+                <h3 className="lg:text-[25px] font-medium capitalize">{val.title}</h3>
+                <aside className="flex md:space-x-16">
                   <div>
                     <span className="text-green-700 mr-2">{val.icon}</span>
                     <span>{val.rating}</span>
@@ -175,7 +175,7 @@ export class FeaturesComponent extends React.Component {
 export class ReliablePerson extends React.Component {
   render() {
     return (
-      <section className="bg-green-400 w-9/12 mx-auto rounded-xl flex">
+      <section className="bg-green-400 lg:w-9/12 lg:mx-auto mx-5 rounded-xl flex">
         <aside className="p-8 space-y-8 w-full  ">
           <h3 className="font-bold text-xl">Skill Set and Adaptability</h3>
           <h1 className="tracking-wide font-mono font-bold text-3xl">A standout house help possesses a diverse skill set that goes beyond mundane chores. </h1>
@@ -203,14 +203,14 @@ export class CleanerComponent extends React.Component {
     return (
       <section className="text-white my-20 bg-[url('../assets/images/cleaner.avif')] bg-cover bg-center bg-no-repeat h-screen flex items-center">
         <aside className="p-10 backdrop-brightness-75 w-full items-center space-y-14 h-screen">
-          <h3 className="text-[25px] font-bold tracking-wide">House Help Made Easy</h3>
-          <h1 className="text-[45px] font-bold font-sans w-1/3">Maintaining Cleanliness and Order:</h1>
-          <p className="text-xl w-1/3">From cleaning and cooking to laundry and organizing, a capable house help ensures that the home remains a comfortable and welcoming space, allowing its occupants to recharge and unwind after a hectic day.</p>
+          <h3 className="lg:text-[25px] font-bold tracking-wide">House Help Made Easy</h3>
+          <h1 className="md:text-[45px] text-[30px] font-bold font-sans md:w-1/3">Maintaining Cleanliness and Order:</h1>
+          <p className="text-xl md:w-1/3">From cleaning and cooking to laundry and organizing, a capable house help ensures that the home remains a comfortable and welcoming space, allowing its occupants to recharge and unwind after a hectic day.</p>
           <div className="grid grid-cols-3 gap-10">
             {cleanliness.map((item, index) => (
               <aside key={index} className="bg-green-600 cursor-pointer space-y-5 rounded-xl p-5 hover:bg-white hover:text-green-600">
-                <h1 className="text-[33px] font-bold w-2/3">{item.title}</h1>
-                <p className="text-xl font-medium space-x-8"><span>{item.pointer}</span>
+                <h1 className="lg:text-[33px] text-[24px] font-bold md:w-2/3">{item.title}</h1>
+                <p className="lg:text-xl font-medium space-x-8"><span>{item.pointer}</span>
                   <FontAwesomeIcon icon={faArrowRight} />
                 </p>
               </aside>
@@ -286,21 +286,6 @@ export class InboxSectionComponent extends React.Component {
           <p className="text-xl first-letter">
             This balance ensures that everyone feels comfortable and heard, enhancing the overall household experience.
           </p>
-
-          <div className={styles.row}>
-            <div className={styles.smCon}>
-              <b>4.3K+</b>
-              <span>
-                Website’s <br /> Powering
-              </span>
-            </div>
-            <div className={styles.smCon}>
-              <b>7M+</b>
-              <span>
-                Chats in <br /> Last 2022
-              </span>
-            </div>
-          </div>
         </div>
       </section>
     );

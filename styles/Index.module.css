@@ -378,6 +378,20 @@
   line-height: 24px;
 }
 
+/*======================================*/
+/* MEDIA QUERY FOR TAB */
+/*======================================*/
+@media only screen and (max-width: 1000px) {
+
+  .forthSection .column b,
+  .inboxSection .column b,
+  .meetCust .con b,
+  .introSection .leftSection h1, .featuresSection h1 {
+    margin: 0;
+    font-size: 35px;
+  }
+}
+
 
 
 /*======================================*/

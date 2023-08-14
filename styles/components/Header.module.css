@@ -90,6 +90,21 @@
     background: #4DA44E;
 }
 
+/*======================================*/
+/* MEDIA QUERY FOR DESKTOP */
+/*======================================*/
+@media only screen and (max-width: 1000px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    /* .header .memu {
+        display: none;
+    } */
+
+
+}
+
 
 /*======================================*/
 /* MEDIA QUERY FOR DESKTOP */
@@ -98,10 +113,12 @@
     .header {
         padding: 10px 20px;
     }
-    .header .memu{
+
+    .header .memu {
         display: none;
     }
-    .header .menuIcon{
+
+    .header .menuIcon {
         display: block;
     }
 }
