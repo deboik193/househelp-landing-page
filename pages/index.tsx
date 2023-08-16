@@ -145,8 +145,8 @@ export class FeaturesComponent extends React.Component {
     return (
       <section className={styles.featuresSection}>
         <h1 className="text-center text-[45px] font-bold pb-8">Browse Skills by Categories</h1>
-        <p className="w-3/4 mx-auto text-center pb-10 text-xl">In the fast-paced world we inhabit today, the demands of work, family, and personal pursuits often leave us with limited time to attend to the myriad tasks that keep a household running smoothly. This is where a skilled and dependable house help becomes an invaluable asset, contributing to the overall well-being and harmony of a household.</p>
-        <div className="grid grid-cols-4 gap-5">
+        <p className="sm:w-3/4 mx-auto text-center pb-10 text-xl">In the fast-paced world we inhabit today, the demands of work, family, and personal pursuits often leave us with limited time to attend to the myriad tasks that keep a household running smoothly. This is where a skilled and dependable house help becomes an invaluable asset, contributing to the overall well-being and harmony of a household.</p>
+        <div className="grid sm:grid-cols-4 gap-5">
           {featuresData.map((val, i) => (
             <div className="h-32 cursor-pointer col-span-1 p-2 outline outline-green-50 outline-1 bg-green-50 hover:bg-green-100" key={i}>
               <div className={`${styles.column} space-y-5 p-3`}>
@@ -206,7 +206,7 @@ export class CleanerComponent extends React.Component {
           <h3 className="lg:text-[25px] font-bold tracking-wide">House Help Made Easy</h3>
           <h1 className="md:text-[45px] text-[30px] font-bold font-sans md:w-1/3">Maintaining Cleanliness and Order:</h1>
           <p className="text-xl md:w-1/3">From cleaning and cooking to laundry and organizing, a capable house help ensures that the home remains a comfortable and welcoming space, allowing its occupants to recharge and unwind after a hectic day.</p>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid sm:grid-cols-3 gap-10">
             {cleanliness.map((item, index) => (
               <aside key={index} className="bg-green-600 cursor-pointer space-y-5 rounded-xl p-5 hover:bg-white hover:text-green-600">
                 <h1 className="lg:text-[33px] text-[24px] font-bold md:w-2/3">{item.title}</h1>
