@@ -47,7 +47,7 @@ export class IntroComponent extends React.Component {
             key="desc"
           />
         </Head>
-        <div className={styles.leftSection}>
+        <div className={`${styles.leftSection} sm:space-y-0 space-y-5`}>
           <h1>A happy home deserve a help who will not only complete chores but becomes a family. </h1>
           <p className="text-xl">
             A good house help is not just someone who completes chores but someone who becomes an integral part of the family, sharing responsibilities and making life more manageable.
@@ -84,18 +84,18 @@ export class Tutorial extends React.Component {
             className={styles.image}
           />
         </div>
-        <div className={styles.leftSection}>
+        <div className={`${styles.leftSection} space-y-4`}>
           <h1>Reliable Support System </h1>
           <p className="text-xl">A competent house help provides a reliable support system that enables busy individuals or families to focus on their careers and personal lives without being overwhelmed by domestic tasks. </p>
-          <ul className="space-y-14">
+          <ul className="space-y-10">
             {reliableSystem.map((item, index) => (
-              <li key={index}>
+              <li key={index} className="space-y-4">
                 <><FontAwesomeIcon icon={item.icon} className="text-2xl mr-3" /> <span className="text-xl font-bold">{item.title}</span></>
                 <p className="mt-2 text-lg">{item.text}</p>
               </li>
             ))}
+            <button className="text-white">Get started</button>
           </ul>
-          <button className="text-white">Get started</button>
         </div>
       </section >
     );

@@ -126,7 +126,7 @@
 /*======================================*/
 /* MEDIA QUERY FOR TAB */
 /*======================================*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
     .footer .topFooter b {
         margin: 40px 0;
         font-size: 35px;
@@ -134,17 +134,22 @@
     }
 
     .footer .topFooter .row ul li {
-        margin: 0 15px;
-        cursor: pointer;
-        font-weight: 500;
-        position: relative;
+        margin: 0 10px;
+    }
+
+    .footer .topFooter .row .socialLinks .socialIcon {
+        margin: 0 10px;
+    }
+
+    .footer .bottomFooter .row span {
+        margin: 0 0 0 20px;
     }
 }
 
 /*======================================*/
 /* MEDIA QUERY FOR DESKTOP */
 /*======================================*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 639px) {
     .footer {
         padding: 0 20px;
         overflow: hidden;

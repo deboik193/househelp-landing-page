@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: [
+        { apex: '#4DA44E'}
+      ]
     }
   },
   plugins: [],

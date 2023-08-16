@@ -381,7 +381,7 @@
 /*======================================*/
 /* MEDIA QUERY FOR TAB */
 /*======================================*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
 
   .forthSection .column b,
   .inboxSection .column b,
@@ -397,7 +397,7 @@
 /*======================================*/
 /* MEDIA QUERY FOR DESKTOP */
 /*======================================*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 639px) {
 
   .featuresSection,
   .introSection,
@@ -413,6 +413,10 @@
   .introSection {
     height: fit-content;
     flex-direction: column;
+  }
+
+  .introSection:nth-child(even) {
+    flex-direction: column-reverse;
   }
 
   .introSection .leftSection,
