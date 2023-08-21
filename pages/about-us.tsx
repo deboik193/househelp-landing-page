@@ -8,9 +8,6 @@ import trust from "../assets/images/trust.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
-  faStar,
-  faPenToSquare,
-  faTags,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutUs() {
@@ -29,24 +26,24 @@ export class AboutComponent extends React.Component {
   render() {
     return (
       <>
-        <nav className="bg-[#03b10a] text-white pt-4 mt-4 h-96">
+        <nav className="bg-[#03b10a] text-white pt-4 mt-4 sm:h-96">
           <section className="lg:w-4/5 sm:w-11/12 sm:mx-auto">
-            <aside className="grid grid-cols-2 py-4">
-              <div className="w-2/3">
+            <aside className="grid sm:grid-cols-2 py-4 sm:px-0 px-5 space-y-10">
+              <div className="sm:w-2/3">
                 <h1 className="font-black text-6xl mb-4">House Help</h1>
                 <p className="text-xl">
                   Our system help to solve trust issues you may have regarding a house help, we had put neccessary tools together that will help you make a right choice of help.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-5">
-                <Image src={clean} alt="cleaner image" className="border-solid border-2 w-72" />
-                <Image src={family} alt="family image" className="border-solid border-2 w-56" />
-                <Image src={clean} alt="Website Logo" className="border-solid border-2 w-40" />
-                <Image src={wheel} alt="Website Logo" className="border-solid border-2 w-64" />
+              <div className="grid grid-cols-2 sm:gap-5 sm:h-40">
+                <Image src={clean} alt="cleaner image" className="border-solid border-2 sm:w-72" />
+                <Image src={family} alt="family image" className="border-solid border-2 sm:w-56" />
+                <Image src={clean} alt="Website Logo" className="border-solid border-2 sm:w-40" />
+                <Image src={wheel} alt="Website Logo" className="border-solid border-2 sm:w-64" />
               </div>
             </aside>
           </section>
-        </nav >
+        </nav>
       </>
     );
   }

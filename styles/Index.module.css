@@ -378,12 +378,26 @@
   line-height: 24px;
 }
 
+/*======================================*/
+/* MEDIA QUERY FOR TAB */
+/*======================================*/
+@media only screen and (max-width: 950px) {
+
+  .forthSection .column b,
+  .inboxSection .column b,
+  .meetCust .con b,
+  .introSection .leftSection h1, .featuresSection h1 {
+    margin: 0;
+    font-size: 35px;
+  }
+}
+
 
 
 /*======================================*/
 /* MEDIA QUERY FOR DESKTOP */
 /*======================================*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 639px) {
 
   .featuresSection,
   .introSection,
@@ -399,6 +413,10 @@
   .introSection {
     height: fit-content;
     flex-direction: column;
+  }
+
+  .introSection:nth-child(even) {
+    flex-direction: column-reverse;
   }
 
   .introSection .leftSection,
