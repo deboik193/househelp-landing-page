@@ -14,6 +14,8 @@ import {
   faTags,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import Link from "next/link";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
@@ -52,9 +54,9 @@ export class IntroComponent extends React.Component {
           <p className="text-xl">
             A good house help is not just someone who completes chores but someone who becomes an integral part of the family, sharing responsibilities and making life more manageable.
           </p>
-          <button className="text-white">
+          <a href="https://househelp.onrender.com/register" target="_blank" className="button" >
             Get started <FontAwesomeIcon icon={faArrowRight} />
-          </button>
+          </a>
         </div>
         <div className={styles.rightSection}>
           <Image
@@ -94,7 +96,7 @@ export class Tutorial extends React.Component {
                 <p className="mt-2 text-lg">{item.text}</p>
               </li>
             ))}
-            <button className="text-white">Get started</button>
+            <a href="https://househelp.onrender.com/register" target="_blank" className="button">Get started</a>
           </ul>
         </div>
       </section >
@@ -110,41 +112,53 @@ export class FeaturesComponent extends React.Component {
     let featuresData = [
       {
         icon: <FontAwesomeIcon icon={faStar} />,
-        title: "Category 1",
+        title: "Security",
         rating: "4.8/5"
       },
       {
         icon: <FontAwesomeIcon icon={faStar} />,
-        title: "Category 2",
+        title: "Chauffeur",
         rating: "4.8/5"
       },
       {
         icon: <FontAwesomeIcon icon={faStar} />,
-        title: "Category 3",
+        title: "Handymen",
         rating: "4.8/5"
       },
       {
         icon: <FontAwesomeIcon icon={faStar} />,
-        title: "Category 4",
+        title: "Housemen",
         rating:
           "4.8/5",
       },
       {
         icon: <FontAwesomeIcon icon={faStar} />,
-        title: "Category 5",
+        title: "Healthcare Assistants",
         rating:
           "4.8/5",
       },
       {
         icon: <FontAwesomeIcon icon={faStar} />,
-        title: "Category 6",
+        title: "Cleaners",
+        rating:
+          "4.8/5",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faStar} />,
+        title: "Carers",
+        rating:
+          "4.8/5",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faStar} />,
+        title: "Mother’s Help",
         rating:
           "4.8/5",
       },
     ];
     return (
-      <section className={styles.featuresSection}>
-        <h1 className="text-center text-[45px] font-bold pb-8">Browse Skills by Categories</h1>
+      <section className={styles.featuresSection} id="skills">
+        <h1 className="text-center text-[45px] font-bold pb-8">Browse Relaible Skills Type</h1>
         <p className="sm:w-3/4 mx-auto text-center pb-10 text-xl">In the fast-paced world we inhabit today, the demands of work, family, and personal pursuits often leave us with limited time to attend to the myriad tasks that keep a household running smoothly. This is where a skilled and dependable house help becomes an invaluable asset, contributing to the overall well-being and harmony of a household.</p>
         <div className="grid sm:grid-cols-4 gap-5">
           {featuresData.map((val, i) => (
@@ -180,7 +194,7 @@ export class ReliablePerson extends React.Component {
           <h3 className="font-bold text-xl">Skill Set and Adaptability</h3>
           <h1 className="tracking-wide font-mono font-bold text-3xl">A standout house help possesses a diverse skill set that goes beyond mundane chores. </h1>
           <p className="text-xl">Cooking nutritious and delicious meals, managing household finances, caring for children and pets, and even assisting with administrative tasks are all part of their repertoire. </p>
-          <button className="bg-blue-900">Find Help</button>
+          <a href="https://househelp.onrender.com/make-offers" target="_blank" className="button">Find Help</a>
         </aside>
         <section
           className="rounded-r-xl bg-[url('../assets/images/wheel.webp')] bg-cover bg-no-repeat bg-blend-overlay bg-opacity-50 bg-green-950 hidden sm:block w-full"
@@ -195,10 +209,10 @@ export class ReliablePerson extends React.Component {
 //==========================================
 export class CleanerComponent extends React.Component {
   render() {
-    const cleanliness: { title: string, pointer: string }[] = [
-      { title: "Find Skills and hire a pro", pointer: "Register" },
-      { title: "Browse through categories", pointer: "Learn More" },
-      { title: "Become a helper, and earn", pointer: "Register" },
+    const cleanliness: { title: string, pointer: string, link: string, }[] = [
+      { title: "Find Skills and hire a pro", pointer: "Register", link: "https://househelp.onrender.com/make-offers" },
+      { title: "Browse through skills", pointer: "Learn More", link: "#skills" },
+      { title: "Become a helper, and earn", pointer: "Register", link: "https://househelp.onrender.com/register" },
     ]
     return (
       <section className="text-white my-20 bg-[url('../assets/images/cleaner.avif')] bg-cover bg-center bg-no-repeat h-screen flex items-center">
@@ -208,12 +222,12 @@ export class CleanerComponent extends React.Component {
           <p className="text-xl md:w-1/3">From cleaning and cooking to laundry and organizing, a capable house help ensures that the home remains a comfortable and welcoming space, allowing its occupants to recharge and unwind after a hectic day.</p>
           <div className="grid sm:grid-cols-3 gap-10">
             {cleanliness.map((item, index) => (
-              <aside key={index} className="bg-green-600 cursor-pointer space-y-5 rounded-xl p-5 hover:bg-white hover:text-green-600">
+              <Link href={item.link} key={index} className="bg-green-600 cursor-pointer space-y-5 rounded-xl p-5 hover:bg-white hover:text-green-600">
                 <h1 className="lg:text-[33px] text-[24px] font-bold md:w-2/3">{item.title}</h1>
                 <p className="lg:text-xl font-medium space-x-8"><span>{item.pointer}</span>
                   <FontAwesomeIcon icon={faArrowRight} />
                 </p>
-              </aside>
+              </Link>
             ))}
           </div>
         </aside>
@@ -238,7 +252,7 @@ export class MeetCustomerComponent extends React.Component {
             A clean and organized home is essential for maintaining physical and mental well-being. A proficient house help takes pride in upholding high standards of cleanliness, ensuring that living spaces are not just tidy but also sanitized.
             They adeptly organize and declutter spaces, contributing to an environment that promotes positivity and reduces stress.
           </p>
-          <button>Hire a help</button>
+          <a href="https://househelp.onrender.com/make-offers" target="_blank" className="button">Hire a help</a>
         </div>
       </section>
     );
@@ -262,7 +276,9 @@ export class ForthSectionComponent extends React.Component {
           <p className="text-xl">
             A good house help often forms deep bonds with family members, becoming a confidant, mentor, and friend to those they serve.
           </p>
-          <button>Start Chatting Now</button>
+          <Link target="_blank" href={'https://api.whatsapp.com/send?phone=+2349125273293'}>
+            <button><FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 mr-3" />Start Chatting Now</button>
+          </Link>
         </div>
         <Image src={family} alt="Video of a family" className={styles.img} />
       </section>

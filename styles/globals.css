@@ -10,6 +10,22 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+.button {
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  height: 56px;
+  width: fit-content;
+  outline: none;
+  cursor: pointer;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #4DA44E;
+  color: #fff;
+}
+
 button {
   font-family: 'Quicksand', sans-serif;
   border: none;
