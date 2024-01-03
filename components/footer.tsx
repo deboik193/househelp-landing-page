@@ -16,7 +16,7 @@ import {
 //====================================================
 export default class FooterComponent extends React.Component {
   render() {
-    let pages: object[] = [{ title: "Become a Help", link: "https://househelp.onrender.com" }, { title: "Why Us", link: "/about-us" }, { title: "Contact", link: "/contact" }];
+    let pages: object[] = [{ title: "Become a Help", link: "/" }, { title: "Why Us", link: "/about-us" }, { title: "Contact", link: "/contact" }];
     let socialLinksData: object[] = [
       {
         links: "https://twitter.com",

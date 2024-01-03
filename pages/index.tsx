@@ -54,7 +54,7 @@ export class IntroComponent extends React.Component {
           <p className="text-xl">
             A good house help is not just someone who completes chores but someone who becomes an integral part of the family, sharing responsibilities and making life more manageable.
           </p>
-          <a href="https://househelp.onrender.com/register" target="_blank" className="button" >
+          <a href={`${location.href}register`} target="_blank" className="button" >
             Get started <FontAwesomeIcon icon={faArrowRight} />
           </a>
         </div>
@@ -96,7 +96,7 @@ export class Tutorial extends React.Component {
                 <p className="mt-2 text-lg">{item.text}</p>
               </li>
             ))}
-            <a href="https://househelp.onrender.com/register" target="_blank" className="button">Get started</a>
+            <a href={`${location.href}register`} target="_blank" className="button">Get started</a>
           </ul>
         </div>
       </section >
@@ -194,7 +194,7 @@ export class ReliablePerson extends React.Component {
           <h3 className="font-bold text-xl">Skill Set and Adaptability</h3>
           <h1 className="tracking-wide font-mono font-bold text-3xl">A standout house help possesses a diverse skill set that goes beyond mundane chores. </h1>
           <p className="text-xl">Cooking nutritious and delicious meals, managing household finances, caring for children and pets, and even assisting with administrative tasks are all part of their repertoire. </p>
-          <a href="https://househelp.onrender.com/make-offers" target="_blank" className="button">Find Help</a>
+          <a href={`${location.href}make-offers`} target="_blank" className="button">Find Help</a>
         </aside>
         <section
           className="rounded-r-xl bg-[url('../assets/images/wheel.webp')] bg-cover bg-no-repeat bg-blend-overlay bg-opacity-50 bg-green-950 hidden sm:block w-full"
@@ -210,9 +210,9 @@ export class ReliablePerson extends React.Component {
 export class CleanerComponent extends React.Component {
   render() {
     const cleanliness: { title: string, pointer: string, link: string, }[] = [
-      { title: "Find Skills and hire a pro", pointer: "Register", link: "https://househelp.onrender.com/make-offers" },
+      { title: "Find Skills and hire a pro", pointer: "Register", link: `${location.href}make-offers` },
       { title: "Browse through skills", pointer: "Learn More", link: "#skills" },
-      { title: "Become a helper, and earn", pointer: "Register", link: "https://househelp.onrender.com/register" },
+      { title: "Become a helper, and earn", pointer: "Register", link: `${location.href}register` },
     ]
     return (
       <section className="text-white my-20 bg-[url('../assets/images/cleaner.avif')] bg-cover bg-center bg-no-repeat h-screen flex items-center">
@@ -252,7 +252,7 @@ export class MeetCustomerComponent extends React.Component {
             A clean and organized home is essential for maintaining physical and mental well-being. A proficient house help takes pride in upholding high standards of cleanliness, ensuring that living spaces are not just tidy but also sanitized.
             They adeptly organize and declutter spaces, contributing to an environment that promotes positivity and reduces stress.
           </p>
-          <a href="https://househelp.onrender.com/make-offers" target="_blank" className="button">Hire a help</a>
+          <a href={`${location.href}make-offers`} target="_blank" className="button">Hire a help</a>
         </div>
       </section>
     );
